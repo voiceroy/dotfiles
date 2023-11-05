@@ -1,0 +1,9 @@
+dotfiles_dir = "dotfiles"
+
+[settings.dots]
+fish = { source = "fish", target = ".config/fish" }
+helix = { source = "helix", target = ".config/helix" }
+zellij = { source = "zellij", target = ".config/zellij" }
+wezterm = { source = "wezterm", target = ".config/wezterm" }
+npm = { source = "npmrc", target = ".npmrc" }
+gitconfig = { source = "gitconfig", target = ".gitconfig" }

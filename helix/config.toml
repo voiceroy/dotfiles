@@ -1,0 +1,63 @@
+theme = "gruvbox"
+
+[editor]
+auto-completion = true
+auto-format = true
+auto-info = true
+auto-pairs = true
+bufferline = "always"
+completion-replace = true
+completion-trigger-len = 2
+gutters = ["diff", "diagnostics", "line-numbers", "spacer"]
+idle-timeout = 400
+insert-final-newline = true
+line-number = "absolute"
+mouse = false
+preview-completion-insert = false
+shell = ["fish", "-c"]
+text-width = 80
+true-color = true
+
+[editor.statusline]
+center = ["file-name", "version-control"]
+left = ["mode", "spinner"]
+right = [
+  "diagnostics",
+  "selections",
+  "position",
+  "file-encoding",
+  "file-line-ending",
+  "file-type",
+]
+separator = "|"
+
+[editor.lsp]
+auto-signature-help = true
+display-messages = false
+display-signature-help-docs = true
+enable = true
+goto-reference-include-declaration = true
+snippets = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+deduplicate-links = true
+follow-symlinks = true
+git-global = true
+git-ignore = true
+hidden = true
+ignore = true
+parents = true
+
+[editor.search]
+smart-case = true
+wrap-around = true
+
+[editor.indent-guides]
+render = true
+character = "|"
+skip-levels = 0

@@ -1,0 +1,10 @@
+[user]
+	name = Harishankar G
+	email = harishankargaddanakeri@gmail.com
+	signingkey = 224C8F44C0F59528
+[core]
+	editor = helix
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true

@@ -1,0 +1,50 @@
+use-grammars = { only = [
+  "rust",
+  "go",
+  "python",
+  "c",
+  "javascript",
+  "typescript",
+  "toml",
+  "markdown",
+  "html",
+  "css",
+] }
+
+[[language]]
+name = "rust"
+auto-format = true
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+[[language]]
+name = "python"
+language-servers = ["pyright", "ruff"]
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "off"
+
+[language-server.ruff]
+command = "ruff-lsp"
+
+[language-server.ruff.config.settings]
+args = ["--ignore", "E501"]
+
+[language.formatter]
+command = "black"
+args = ["--line-length", "88", "--quiet", "-"]
+
+[[language]]
+name = "toml"
+formatter = { command = "taplo", args = ["fmt", "-"] }
+
+
+[[language]]
+name = "markdown"
+language-servers = ["marksman"]
