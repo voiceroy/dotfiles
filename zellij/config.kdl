@@ -1,5 +1,5 @@
 auto_layout true
-copy_clipboard "primary"
+copy_clipboard "system"
 copy_on_select true
 default_layout "compact"
 default_shell "fish"
