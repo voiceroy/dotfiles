@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-sudo pacman -Syu - < dotfiles/pkglist.txt
+sudo pacman -Syu - < ~/dotfiles/pkglist.txt
 
-git clone https://github.com/voiceroy/dotfiles
-bombadil install dotfiles/
+bombadil install ~/dotfiles/
 bombadil link
 
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile complete --default-toolchain stable -y
@@ -21,4 +20,4 @@ fish -c "fish_add_path -U ~/.cargo/bin"
 
 python -m venv ~/venv
 source ~/venv/bin/activate
-pip install -r dotfiles/pip_packages.txt
+pip install -r ~/dotfiles/pip_packages.txt
