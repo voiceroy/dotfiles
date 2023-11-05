@@ -24,6 +24,7 @@ gamescope
 gdb
 gedit
 gitui
+go
 gnome-disk-utility
 gnome-system-monitor
 gparted
@@ -36,8 +37,6 @@ kid3-qt
 kmon
 libadwaita
 libvirt
-linux-lts
-linux-zen
 lldb
 man-db
 marksman
@@ -53,7 +52,6 @@ psensor
 qalculate-gtk
 qbittorrent
 qt5ct
-qt6ct
 reflector
 signal-desktop
 spotify-launcher
@@ -63,7 +61,6 @@ telegram-desktop
 tlp
 toml-bombadil
 ttc-iosevka
-ungoogled-chromium
 vlc
 vulkan-tools
 wezterm
