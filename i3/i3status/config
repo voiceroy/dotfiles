@@ -1,0 +1,53 @@
+general {
+	colors = true
+	interval = 5
+}
+
+order += "wireless wlan0"
+order += "cpu_temperature 0"
+order += "load"
+order += "memory"
+order += "battery 0"
+order += "disk /"
+order += "volume master"
+order += "tztime local"
+
+wireless wlan0 {
+	format_up = "Wifi: %ip (%quality at %essid, %bitrate)"
+	format_down = "Wifi: down"
+}
+
+cpu_temperature 0 {
+	format = "CPU Temp: %degrees °C"
+	path = "/sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon3/temp1_input"	
+}
+
+load {
+	format = "CPU Load: %1min %5min %15min"
+}
+
+memory {
+	format = "RAM: %free %available (%used) / %total"
+}
+
+battery 0 {
+	format = "Battery: %status %percentage %remaining"
+	low_threshold = 20
+	threshold_type = percentage_free
+}
+
+disk "/" {
+	format = "Homework Folder: %avail"
+}
+
+volume master {
+	device = "pulse"
+	mixer = "Master"
+	mixer_idx = 0
+	format = "Volume: %volume"
+	format_muted = "Volume: muted (%volume)"
+}
+
+tztime local {
+	format = "%d-%m-%Y %I:%M:%S %p"
+}

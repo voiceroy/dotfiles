@@ -7,3 +7,4 @@ zellij = { source = "zellij", target = ".config/zellij" }
 wezterm = { source = "wezterm", target = ".config/wezterm" }
 npm = { source = "npmrc", target = ".npmrc" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
+i3 = {source = "i3", target = ".config/i3"}
