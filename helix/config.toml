@@ -61,3 +61,6 @@ wrap-around = true
 render = true
 character = "|"
 skip-levels = 0
+
+[editor.soft-wrap]
+enable = true
