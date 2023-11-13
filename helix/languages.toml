@@ -44,7 +44,10 @@ args = ["--line-length", "88", "--quiet", "-"]
 name = "toml"
 formatter = { command = "taplo", args = ["fmt", "-"] }
 
-
 [[language]]
 name = "markdown"
 language-servers = ["marksman"]
+
+[[language]]
+name = "c"
+auto-format = true
