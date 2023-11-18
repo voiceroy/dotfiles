@@ -4,10 +4,10 @@ dotfiles_dir = "dotfiles"
 fish = { source = "fish", target = ".config/fish" }
 helix = { source = "helix", target = ".config/helix" }
 zellij = { source = "zellij", target = ".config/zellij" }
-wezterm = { source = "wezterm", target = ".config/wezterm" }
 npm = { source = "npmrc", target = ".npmrc" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
 i3 = {source = "i3", target = ".config/i3"}
 polybar = {source = "polybar", target = ".config/polybar"}
 flameshot = {source = "flameshot", target = ".config/flameshot"}
 gsimplecal = {source = "gsimplecal", target = ".config/gsimplecal"}
+kitty = {source = "kitty.conf", target = ".config/kitty/kitty.conf"}
