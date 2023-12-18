@@ -8,3 +8,4 @@ on_force_close "quit"
 pane_frames false
 simplified_ui true
 theme "gruvbox-dark"
+scrollback_editor "/usr/bin/helix"
