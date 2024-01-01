@@ -1,0 +1,76 @@
+* {
+	font-size: 13px;
+	font-family: Inter;
+}
+
+window#waybar {
+	background: #181819;
+	color: #e2e2e3;
+}
+
+#workspaces,
+#clock,
+#wireplumber,
+#memory,
+#cpu,
+#battery,
+#disk,
+#temperature,
+#backlight,
+#network,
+#tray {
+	background: #181819;
+}
+
+#workspaces button {
+	padding: 0 2px;
+	color: #fc5d7c;
+}
+
+#wireplumber {
+	color: #f39660;
+}
+
+#memory {
+	color: #e7c664;
+}
+
+#cpu {
+	color: #ff6007;
+}
+
+#battery {
+	color: #9ed072;
+}
+
+#network {
+	color: #76cce0;
+}
+
+#disk {
+	color: #b39df3;
+}
+
+#temperature {
+	color: #a7df78;
+}
+
+#backlight {
+	color: #85d3f2;
+}
+
+#tray {
+	color: #7f8490;
+}
+
+#clock,
+#wireplumber,
+#memory,
+#cpu,
+#battery,
+#temperature,
+#backlight,
+#network,
+#disk {
+	padding: 0 5px;
+}

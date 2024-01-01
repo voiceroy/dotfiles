@@ -6,8 +6,8 @@ helix = { source = "helix", target = ".config/helix" }
 zellij = { source = "zellij", target = ".config/zellij" }
 npm = { source = "npmrc", target = ".npmrc" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
-i3 = {source = "i3", target = ".config/i3"}
-polybar = {source = "polybar", target = ".config/polybar"}
+sway = { source = "sway", target = ".config/sway" }
+waybar = { source = "waybar", target = ".config/waybar" }
 flameshot = {source = "flameshot", target = ".config/flameshot"}
 gsimplecal = {source = "gsimplecal", target = ".config/gsimplecal"}
 kitty = {source = "kitty.conf", target = ".config/kitty/kitty.conf"}

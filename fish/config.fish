@@ -4,6 +4,9 @@ if status is-interactive
 end
 
 if status is-login
+    if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
+        exec sway
+    end
     exec bash -c "test -e /etc/profile && source /etc/profile;\
     exec fish"
 end
