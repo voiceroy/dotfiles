@@ -8,6 +8,4 @@ npm = { source = "npmrc", target = ".npmrc" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
 sway = { source = "sway", target = ".config/sway" }
 waybar = { source = "waybar", target = ".config/waybar" }
-flameshot = {source = "flameshot", target = ".config/flameshot"}
-gsimplecal = {source = "gsimplecal", target = ".config/gsimplecal"}
 kitty = {source = "kitty.conf", target = ".config/kitty/kitty.conf"}

@@ -51,7 +51,7 @@
 		"format": "TEMP:{temperatureC}°C"
 	},
 	"tray": {
-		"icon-size": 13,
+		"icon-size": 16,
 		"spacing": 10
 	}
 }

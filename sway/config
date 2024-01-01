@@ -15,6 +15,11 @@ input type:touchpad {
 default_border none
 output * bg #000000 solid_color
 
+exec_always nm-applet --indicator
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec hash dbus-update-activation-environment 2>/dev/null && \
+     dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+
 exec swayidle -w \
          timeout 300 'swaylock -f -c 000000' \
          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
@@ -25,7 +30,7 @@ bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+c reload
-
+bindsym Print exec fish -c 'wayshot -f ~/Pictures/Screenshots/screenshot_$(date +"%H:%M:%S %d-%m-%Y").png'
 floating_modifier $mod normal
 
 bindsym $mod+1 workspace number 1
@@ -105,3 +110,4 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
+bindsym XF86AudioStop exec playerctl stop
