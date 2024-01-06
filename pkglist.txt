@@ -38,6 +38,7 @@ git
 go
 gparted
 gst-plugin-pipewire
+gtk-engine-murrine
 helix
 htop
 imhex-bin
@@ -132,6 +133,7 @@ wl-clipboard
 wlogout
 xdg-desktop-portal-gtk
 xdg-utils
+xsettingsd
 yay-bin
 zellij
 zig
