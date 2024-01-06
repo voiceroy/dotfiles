@@ -33,9 +33,7 @@ typeCheckingMode = "off"
 
 [language-server.ruff]
 command = "ruff-lsp"
-
-[language-server.ruff.config.settings]
-args = ["--ignore", "E501"]
+config = { settings = { run = "onSave" } }
 
 [language.formatter]
 command = "black"
