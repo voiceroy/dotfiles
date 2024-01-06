@@ -1,7 +1,7 @@
 set $mod Mod4
 
 set $term kitty
-set $menu bemenu-run
+set $menu j4-dmenu-desktop --dmenu="bemenu -i" --term="kitty"
 
 input type:touchpad {
 	tap enabled
@@ -30,6 +30,7 @@ bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
 bindsym control+shift+escape exec $term htop
 bindsym $mod+Shift+s exec systemctl poweroff
+bindsym $mod+Shift+r exec systemctl reboot
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 bindsym Print exec fish -c 'wayshot -f ~/Pictures/Screenshots/screenshot_$(date +"%H:%M:%S %d-%m-%Y").png'
