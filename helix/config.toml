@@ -1,4 +1,4 @@
-theme = "gruvbox"
+theme = "monokai_pro_ristretto"
 
 [editor]
 auto-completion = true
