@@ -3,12 +3,8 @@ use-grammars = { only = [
   "go",
   "python",
   "c",
-  "javascript",
-  "typescript",
   "toml",
   "markdown",
-  "html",
-  "css",
 ] }
 
 [[language]]
