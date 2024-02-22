@@ -1,0 +1,3 @@
+default-timeout=5000
+max-visible=5
+max-history=5

@@ -8,4 +8,6 @@ npm = { source = "npmrc", target = ".npmrc" }
 gitconfig = { source = "gitconfig", target = ".gitconfig" }
 sway = { source = "sway", target = ".config/sway" }
 waybar = { source = "waybar", target = ".config/waybar" }
-kitty = {source = "kitty.conf", target = ".config/kitty/kitty.conf"}
+kitty = { source = "kitty.conf", target = ".config/kitty/kitty.conf" }
+mako = { source = "mako", target = ".config/mako" }
+kanshi = { source = "kanshi", target = ".config/kanshi" }

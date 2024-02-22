@@ -87,4 +87,4 @@ SETUVAR fish_pager_color_selected_background:\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_pager_color_selected_completion:\x1d
 SETUVAR fish_pager_color_selected_description:\x1d
 SETUVAR fish_pager_color_selected_prefix:\x1d
-SETUVAR fish_user_paths:/home/voiceroy/JetBrains/scripts\x1e/home/voiceroy/\x2enpm_packages/bin\x1e/home/voiceroy/\x2ecargo/bin\x1e/home/voiceroy/go/bin
+SETUVAR fish_user_paths:/home/voiceroy/\x2ebun/bin\x1e/home/voiceroy/JetBrains/scripts\x1e/home/voiceroy/\x2enpm_packages/bin\x1e/home/voiceroy/\x2ecargo/bin\x1e/home/voiceroy/go/bin
