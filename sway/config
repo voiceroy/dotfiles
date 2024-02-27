@@ -1,7 +1,7 @@
 set $mod Mod4
 
 set $term kitty
-set $menu j4-dmenu-desktop --dmenu="bemenu -i" --term="kitty"
+set $menu j4-dmenu-desktop --dmenu="bemenu -i" --term=$term
 
 input type:touchpad {
 	tap enabled
@@ -11,13 +11,12 @@ input type:touchpad {
 default_border none
 output * bg #000000 solid_color
 
-exec_always nm-applet --indicator
 exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 exec swayidle -w \
-  timeout 900 'swaymsg "output * power off"' \
+  timeout 300 'swaymsg "output * power off"' \
   resume 'swaymsg "output * power on"'
 
 bindsym $mod+l exec swaylock --ignore-empty-password --show-failed-attempts \
