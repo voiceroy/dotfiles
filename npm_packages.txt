@@ -1,7 +1,0 @@
-/home/voiceroy/.npm_packages/lib
-├── prettier@3.1.1
-├── pyright@1.1.344
-├── typescript-language-server@4.2.0
-├── typescript@5.3.3
-└── vscode-langservers-extracted@4.8.0
-
