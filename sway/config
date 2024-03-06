@@ -27,7 +27,7 @@ bindsym $mod+l exec swaylock --ignore-empty-password --show-failed-attempts \
 bindsym $mod+Return exec $term
 bindsym $mod+Shift+q kill
 bindsym $mod+d exec $menu
-bindsym control+shift+escape exec $term htop
+bindsym control+shift+escape exec $term btop --utf-force
 bindsym $mod+Shift+s exec systemctl poweroff
 bindsym $mod+Shift+r exec systemctl reboot
 bindsym $mod+Shift+c reload
