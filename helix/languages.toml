@@ -5,6 +5,7 @@ use-grammars = { only = [
   "c",
   "toml",
   "markdown",
+  "sql",
 ] }
 
 [[language]]

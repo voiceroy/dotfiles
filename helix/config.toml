@@ -1,4 +1,4 @@
-theme = "monokai_pro_ristretto"
+theme = "monokai_pro_spectrum"
 
 [editor]
 auto-completion = true
@@ -17,6 +17,7 @@ preview-completion-insert = false
 shell = ["fish", "-c"]
 text-width = 80
 true-color = true
+popup-border = "all"
 
 [editor.statusline]
 center = ["file-name", "version-control"]
@@ -64,3 +65,11 @@ skip-levels = 0
 
 [editor.soft-wrap]
 enable = true
+
+[keys.normal]
+"C-l" = [
+  ":append-output echo -n =",
+  "search_selection",
+  "delete_selection",
+  "search_prev",
+]
