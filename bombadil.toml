@@ -11,3 +11,4 @@ waybar = { source = "waybar", target = ".config/waybar" }
 kitty = { source = "kitty.conf", target = ".config/kitty/kitty.conf" }
 mako = { source = "mako", target = ".config/mako" }
 kanshi = { source = "kanshi", target = ".config/kanshi" }
+cargo = { source = "cargo", target = ".config/cargo" }
