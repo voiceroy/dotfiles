@@ -20,6 +20,8 @@ source "$HOME/.cargo/env"
 cargo install tlrc
 cargo install --locked evcxr_repl
 cargo install wayshot
+cargo install fnm
+cargo install taplo
 echo "Installing rust packages done"
 
 echo "Installing rust-analyser"
