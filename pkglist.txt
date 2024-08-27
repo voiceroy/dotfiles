@@ -104,7 +104,7 @@ telegram-desktop
 tlp
 tmon
 toml-bombadil
-ttc-iosevka
+ttf-ibm-plex
 turbostat
 usbip
 vdpauinfo
