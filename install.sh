@@ -2,7 +2,13 @@
 
 # Install all the packages
 echo "Installing system packages"
-sudo pacman -Syu - < ~/dotfiles/pkglist.txt
+sudo pacman -Syu --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd ..
+rm -rf yay
+yay -Syu - < ~/dotfiles/pkglist.txt
 echo "Installing system packages done"
 
 # Link all the config files
@@ -13,15 +19,13 @@ echo "Setting up dotfiles done"
 
 # Install rust toolchain
 echo "Installing rust toolchain"
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- --profile default --default-toolchain stable -y
+rustup install --profile default stable
 echo "Installing rust toolchain done"
 echo "Installing rust packages"
 source "$HOME/.cargo/env"
-cargo install tlrc
-cargo install --locked evcxr_repl
-cargo install wayshot
-cargo install fnm
-cargo install taplo
+cargo install wayshot --locked
+cargo install fnm --locked
+cargo install taplo-cli --locked
 echo "Installing rust packages done"
 
 echo "Installing rust-analyser"
@@ -36,19 +40,33 @@ go install github.com/nao1215/gup@latest
 go install golang.org/x/tools/gopls@latest
 go install github.com/go-delve/delve/cmd/dlv@latest
 go install golang.org/x/tools/cmd/goimports@latest
+go install golang.org/x/perf/cmd/benchfilter@latest
+go install golang.org/x/perf/cmd/benchsave@latest
+go install golang.org/x/perf/cmd/benchseries@latest
+go install golang.org/x/perf/cmd/benchstat@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
+go install github.com/aarzilli/gdlv@latest
+go install github.com/melkeydev/go-blueprint@latest
+go install github.com/joho/godotenv/cmd/godotenv@latest
+go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/golangci/golangci-lint/v2/cmd/golangci-lint@latest
+go install github.com/nametake/golangci-lint-langserver@latest
+go install golang.org/x/tools/gopls@latest
+go install github.com/google/gops@latest
+go install github.com/nao1215/gup@latest
+go install github.com/hetznercloud/cli/cmd/hcloud@latest
+go install github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@latest
+go install honnef.co/go/tools/cmd/staticcheck@latest
 echo "Installing go tools done"
-
-# Install pyright lsp
-echo "Installing pyright"
-npm install -g pyright
-echo "Installing pyright done"
 
 # Install python tools
 echo "Installing python tools"
-python -m venv ~/venv
-source ~/venv/bin/activate
-pip install black isort ruff ruff-lsp BetterADBSync
-deactivate
+uv tool install ty
+uv tool install isort
+uv tool install ipython
+uv tool install ruff
 echo "Installing python tools done"
 
 # Fetch & build treesitter grammars
