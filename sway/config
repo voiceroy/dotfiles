@@ -39,7 +39,7 @@ floating_modifier $mod normal
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
-bindsym Print exec fish -c 'wayshot -f ~/Pictures/Screenshots/screenshot_$(date +"%H:%M:%S %d-%m-%Y").png'
+bindsym Print exec fish -c 'wayshot "/home/voiceroy/Pictures/Screenshots/screenshot_$(date +%H-%M-%S_%d-%m-%Y).png"'
 
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
