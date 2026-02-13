@@ -22,19 +22,12 @@ formatter = { command = "goimports" }
 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff"]
+language-servers = ["ty"]
 auto-format = true
 
-[language-server.pyright.config.python.analysis]
-typeCheckingMode = "off"
-
-[language-server.ruff]
-command = "ruff-lsp"
-config = { settings = { run = "onSave" } }
-
 [language.formatter]
-command = "black"
-args = ["--line-length", "88", "--quiet", "-"]
+command = "ruff"
+args = ["format", "--line-length", "88", "-"]
 
 [[language]]
 name = "toml"
