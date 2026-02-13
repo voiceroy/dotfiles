@@ -1,7 +1,7 @@
 [user]
 	name = Harishankar G
 	email = harishankargaddanakeri@gmail.com
-	signingkey = 224C8F44C0F59528
+	signingkey = 67021A4D236E88890B859013C8F81FA485426DFE
 [core]
 	editor = helix
 [init]
@@ -10,3 +10,9 @@
 	gpgsign = true
 [url "ssh://git@github.com"]
 	insteadOf = https://github.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
