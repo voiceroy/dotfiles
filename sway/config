@@ -3,6 +3,8 @@ input type:touchpad {
 	natural_scroll enabled
 }
 
+font Inter 9
+
 set $mod Mod4
 
 set $term kitty
